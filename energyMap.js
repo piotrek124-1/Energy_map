@@ -37,7 +37,6 @@ function getEnergyData(countryName) {
             // @ts-ignore
             result.fill = fill;
         }
-        console.log(data.fill);
         return result;
     }
     function createPlot(plotId, trace, layout, type, traceName, fill) {
@@ -77,7 +76,7 @@ function getEnergyData(countryName) {
     }, "scatter", ["gdp [USD]"], "tozeroy");
     document.getElementById("country").innerText = countryName;
 }
-d3.json("https://raw.githubusercontent.com/piotrek124-1/Energy_world/main/countries.geojson").then(function (data) {
+d3.json("https://raw.githubusercontent.com/piotrek124-1/Energy_map/main/countries.geojson").then(function (data) {
     var closeButton = document.getElementById("close_button");
     closeButton.addEventListener("click", function (d) { return click(); });
     var status = false;

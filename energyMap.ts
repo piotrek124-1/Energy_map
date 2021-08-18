@@ -43,7 +43,6 @@ function getEnergyData(countryName) {
             // @ts-ignore
             result.fill = fill
         }
-        console.log(data.fill)
         return result
     }
 
@@ -85,7 +84,7 @@ function getEnergyData(countryName) {
     }, "scatter", ["gdp [USD]"], "tozeroy")
     document.getElementById("country").innerText = countryName
 }
-d3.json("https://raw.githubusercontent.com/piotrek124-1/Energy_world/main/countries.geojson").then(function (data) {
+d3.json("https://raw.githubusercontent.com/piotrek124-1/Energy_map/main/countries.geojson").then(function (data) {
     let closeButton = document.getElementById("close_button");
     closeButton.addEventListener("click", d => click());
     let status = false;
