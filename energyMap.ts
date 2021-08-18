@@ -110,6 +110,7 @@ d3.json("https://raw.githubusercontent.com/piotrek124-1/Energy_map/main/countrie
     };
     var click = function () {
         if (status === false) {
+            document.getElementById("close_button").style.visibility = "visible";
             d3.selectAll("svg")
                 .transition()
                 .duration(1000)
@@ -118,6 +119,7 @@ d3.json("https://raw.githubusercontent.com/piotrek124-1/Energy_map/main/countrie
             status = true;
         }
         else {
+            document.getElementById("close_button").style.visibility = "hidden";
             document.getElementById("country").innerHTML = null;
             document.getElementById("energy_share_plot").innerHTML = null;
             document.getElementById("detailed_energy_share_plot").innerHTML = null;
