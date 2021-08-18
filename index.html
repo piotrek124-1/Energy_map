@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src = "https://d3js.org/d3.v6.js"></script>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js?_ga=2.161304253.1226614368.1616926970-193854623.1615287988"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="source">
+    <a>Data source: </a>
+    <a href="https://github.com/owid/energy-data">https://github.com/owid/energy-data</a>
+    <a>, Our World in Data - Hannah Ritchie, Max Roser, Edouard Mathieu, Data used for the visualization on this website has been calculated by Our World in Data based on BP Statistical Review of World Energy and BP Statistical Review of World Energy and Ember </a>
+    <br>
+    <a>Data on country borders come from: </a>
+    <a href="https://github.com/johan/world.geo.json">https://github.com/johan/world.geo.json</a>
+</div>
+<svg id="map" width="1600" height="900" style="position: absolute"></svg>
+<div>
+    <div class="row">
+        <div id="country" style="font-size: 64px"></div>
+        <button id = "close_button" class="btn btn-outline-secondary" style="width: 64px; height: 32px; margin-left: 95%">Close</button>
+    </div>
+    <div class="row">
+        <div id="electricity_generation" class="col" style="width: 400px; height: 400px"></div>
+        <div id="carbon_plot" class="col" style="width: 400px; height: 400px"></div>
+    </div>
+    <div class="row">
+        <div id="energy_share_plot" class="col" style="width: 400px; height: 400px"></div>
+        <div id="detailed_energy_share_plot" class="col" style="width: 400px; height: 400px"></div>
+    </div>
+</div>
+
+    <script src="energyMap.js"></script>
+</body>
+</html>
