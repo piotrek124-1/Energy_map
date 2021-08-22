@@ -3,6 +3,6 @@
  # Data Sources
  Author/Repository/Organization | Description | Link | License
  -------|-----------------------|-------------|------|
- Our World in Data | Energy data | https://github.com/owid/energy-data | https://github.com/owid/energy-data#license
+ Our World in Data (Hannah Ritchie, Max Roser, Edouard Mathieu) | Energy data | https://github.com/owid/energy-data | https://github.com/owid/energy-data#license
  https://github.com/johan/world.geo.json | Map geojson | https://github.com/johan/world.geo.json | https://github.com/johan/world.geo.json/blob/master/UNLICENSE
 
